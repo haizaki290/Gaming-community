@@ -1,23 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Home</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <title>Gaming Homepage</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+    <header>
+      <h1>Welcome to the Gaming Homepage</h1>
+    </header>
     <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+      <ul>
+        <li><a href="#featured">Featured Games</a></li>
+        <li><a href="#upcoming">Upcoming Games</a></li>
+        <li><a href="#genres">Game Genres</a></li>
+      </ul>
     </nav>
     <main>
-      <h1>Home page</h1>
+      <section id="featured">
+        <h2>Featured Games</h2>
+        <div id="featured-games"></div>
+      </section>
+      <section id="upcoming">
+        <h2>Upcoming Games</h2>
+        <div id="upcoming-games"></div>
+      </section>
+      <section id="genres">
+        <h2>Game Genres</h2>
+        <ul id="game-genres"></ul>
+      </section>
     </main>
+    <footer>
+      <p>&copy; 2023 Gaming Homepage</p>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
